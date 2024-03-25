@@ -20,10 +20,13 @@ public class ManagerHospitalApplication implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        patientDAO.save(new Patient(null,"Moustapha",new Date(),false,"Masculin",230));
-        patientDAO.save(new Patient(null,"Youssouf",new Date(),false,"Masculin",243));
-        patientDAO.save(new Patient(null,"David",new Date(),true,"Masculin",2123));
+        patientDAO.save(new Patient(null,"Mohamad",new Date(),false,"Masculin",230));
         patientDAO.save(new Patient(null,"Marie",new Date(),false,"Feminin",203));
+        patientDAO.save(new Patient(null,"Joseph",new Date(),false,"Masculin",243));
+        patientDAO.save(new Patient(null,"David",new Date(),true,"Masculin",2123));
+        patientDAO.save(new Patient(null,"Elisabeth",new Date(),false,"Feminin",203));
+        patientDAO.save(new Patient(null,"John",new Date(),false,"Masculin",203));
+        patientDAO.save(new Patient(null,"Jessica",new Date(),false,"Feminin",203));
 
     }
 }
